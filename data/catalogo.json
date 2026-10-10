@@ -1,0 +1,199 @@
+{
+    "seq_modalidade": 13,
+    "modalidades": [
+        {
+            "elemento": "ar",
+            "nome": "Motocross Freestyle",
+            "subtitulo": "Domine o ar. Enfrente o limite.",
+            "descricao": "Aceleração, saltos e manobras que desafiam a gravidade.",
+            "nivel": "PRO",
+            "id": "5fdc4b7aff46",
+            "slug": "motocross-freestyle",
+            "numero": 1,
+            "imagem": "5b4fd07ffd531d5c.png",
+            "criado": 1791660450
+        },
+        {
+            "elemento": "ar",
+            "nome": "Paraquedismo",
+            "subtitulo": "Salte. Sinta. Supere.",
+            "descricao": "Experimente a liberdade da queda livre e contemple o mundo de uma perspectiva única.",
+            "nivel": "PRO",
+            "id": "38fbfc580ffc",
+            "slug": "paraquedismo",
+            "numero": 2,
+            "imagem": "c4e12de65ec56944.png",
+            "criado": 1791660671
+        },
+        {
+            "elemento": "fogo",
+            "nome": "Airsoft Tático",
+            "subtitulo": "Estratégia, precisão e trabalho em equip",
+            "descricao": "Entre obstáculos, terrenos variados e missões em equipe, o airsoft combina estratégia, comunicação e tomada de decisões sob pressão.",
+            "nivel": "TÁTICO",
+            "id": "a21509dad8b7",
+            "slug": "airsoft-tatico",
+            "numero": 5,
+            "imagem": "2690aa6595ac8bc7.jpg",
+            "criado": 1791661412
+        },
+        {
+            "elemento": "fogo",
+            "nome": "Globe of Death",
+            "subtitulo": "Velocidade, precisão e coragem em uma es",
+            "descricao": "Dentro de uma esfera metálica, cada movimento exige sincronia, controle e precisão absoluta. O Globe of Death é um espetáculo de alta velocidade em que pilotos desafiam a gravidade e executam manobras",
+            "nivel": "EXTREME",
+            "id": "9ed0a8bd0903",
+            "slug": "globe-of-death",
+            "numero": 6,
+            "imagem": "22f89d2f50812454.jpg",
+            "criado": 1791661801
+        },
+        {
+            "elemento": "agua",
+            "nome": "Cave Diving - Mergulho em Cavernas",
+            "subtitulo": "Explore as profundezas além da luz.",
+            "descricao": "O mergulho em cavernas leva a exploração subaquática a outro nível, entre formações rochosas, passagens estreitas e ambientes sem acesso direto à superfície.",
+            "nivel": "ADVANCED",
+            "id": "2f0f18bad45a",
+            "slug": "cave-diving-mergulho-em-cavernas",
+            "numero": 7,
+            "imagem": "d8f9b573ef950de3.webp",
+            "criado": 1791661942
+        },
+        {
+            "elemento": "agua",
+            "nome": "Big Wave Surfing",
+            "subtitulo": "Encare a força do oceano.",
+            "descricao": "Ondas gigantes, decisões em segundos e uma conexão intensa com o mar.",
+            "nivel": "PRO",
+            "id": "c23b2baff0a7",
+            "slug": "big-wave-surfing",
+            "numero": 8,
+            "imagem": "8b140b1dcb8f93a9.jpg",
+            "criado": 1791662279
+        },
+        {
+            "elemento": "terra",
+            "nome": "Jóquei — Corrida Equestre",
+            "subtitulo": "Velocidade, equilíbrio e conexão em cada",
+            "descricao": "Na corrida equestre, cavalo e jóquei trabalham em sintonia para enfrentar curvas, disputar posições e alcançar a linha de chegada.",
+            "nivel": "PRO",
+            "id": "0d81d030b0f1",
+            "slug": "joquei-corrida-equestre",
+            "numero": 9,
+            "imagem": "7e9dccbe850276ff.jpg",
+            "criado": 1791664581
+        },
+        {
+            "elemento": "ar",
+            "nome": "Wingsuit Flying",
+            "subtitulo": "Transforme a queda livre em voo.",
+            "descricao": "O wingsuit é uma das experiências mais intensas dos esportes aéreos.",
+            "nivel": "EXTREME",
+            "id": "d748b06aa047",
+            "slug": "wingsuit-flying",
+            "numero": 11,
+            "imagem": "2aaf184c7e01f1d4.jpg",
+            "criado": 1791665188
+        },
+        {
+            "elemento": "terra",
+            "nome": "Caça Florestal",
+            "subtitulo": "Leia os sinais da natureza.",
+            "descricao": "A caça florestal exige conhecimento do terreno, observação, paciência e orientação em ambientes naturais.",
+            "nivel": "TÁTICO",
+            "id": "5581acb11ad8",
+            "slug": "caca-florestal",
+            "numero": 12,
+            "imagem": "e85b6618a0afdc40.jpg",
+            "criado": 1791665266
+        },
+        {
+            "elemento": "terra",
+            "nome": "Canyoning",
+            "subtitulo": "Entre cachoeiras, rochas e desafios extr",
+            "descricao": "Explore cânions e enfrente a força da natureza em uma aventura que combina rapel, escalada, trilhas aquáticas e descidas por cachoeiras.",
+            "nivel": "EXTREME",
+            "id": "f2cbfe10125a",
+            "slug": "canyoning",
+            "numero": 13,
+            "imagem": "11fd820c798d9bfc.jpg",
+            "criado": 1791667737
+        }
+    ],
+    "produtos": [
+        {
+            "id": "2e28f56278d4",
+            "modalidade": "a21509dad8b7",
+            "nome": "Rifle Airsoft Colt M733 Commando (CAR-15 Tático)",
+            "valor": 4890,
+            "valor_antigo": 5000,
+            "imagem": "9e5eb55885ff4271.jpg",
+            "criado": 1791666642
+        },
+        {
+            "id": "95ba765f2569",
+            "modalidade": "a21509dad8b7",
+            "nome": "Pistola Airsoft SIG Sauer P320 GBB (ProForce M17/M18)",
+            "valor": 2150,
+            "valor_antigo": 2750,
+            "imagem": "6e3f085764bd5804.jpg",
+            "criado": 1791666894
+        },
+        {
+            "id": "73b3756289c5",
+            "modalidade": "a21509dad8b7",
+            "nome": "Kit Tático Verde Oliva (Mochila Tática Assalto + Colete Plate Carrier Modular)",
+            "valor": 480,
+            "valor_antigo": 620,
+            "imagem": "3cedc1d81934412e.jpg",
+            "criado": 1791667112
+        },
+        {
+            "id": "7b15b70b41de",
+            "modalidade": "2f0f18bad45a",
+            "nome": "Cilindro de Alumínio S80 12L / 3000 PSI com Válvula + Máscara de Mergulho",
+            "valor": 3650,
+            "valor_antigo": 4600,
+            "imagem": "ebddecfb56a481c8.jpg",
+            "criado": 1791667298
+        },
+        {
+            "id": "ada0b225a17f",
+            "modalidade": "0d81d030b0f1",
+            "nome": "Kit Sela Australiana de Couro (com Manta/Puffer Pad, Estribos e Barrigueira)",
+            "valor": 1150,
+            "valor_antigo": 1800,
+            "imagem": "5b481066cac776f2.jpg",
+            "criado": 1791668016
+        },
+        {
+            "id": "24d92715fa9b",
+            "modalidade": "5fdc4b7aff46",
+            "nome": "Moto de Enduro Husqvarna FE 350 / FE 450",
+            "valor": 89990,
+            "valor_antigo": 98000,
+            "imagem": "3504933522306ccc.jpg",
+            "criado": 1791668215
+        },
+        {
+            "id": "ccd5bb851a14",
+            "modalidade": "5fdc4b7aff46",
+            "nome": "Off-Road FXR Racing (com Óculos de Proteção Scott Prospect / Lente Espelhada)",
+            "valor": 2050,
+            "valor_antigo": 2800,
+            "imagem": "c17b02255dea0f64.jpg",
+            "criado": 1791668423
+        },
+        {
+            "id": "e9cb52a95d8e",
+            "modalidade": "d748b06aa047",
+            "nome": "Kit Wingsuit + Sistema Paraquedas (Fato Asas Squirrel + Rig/Mochila Paraquedas)",
+            "valor": 61067,
+            "valor_antigo": null,
+            "imagem": "8144da07078d4300.jpg",
+            "criado": 1791669099
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "nome": "Administrador",
+        "email": "admin@empresa.com",
+        "senha": "$2y$10$Dd6eiCwMUhH9zEadlr3seebQB3FxiYe4zuJhXg5/gSbhHwDyujylO",
+        "admin": true
+    },
+    {
+        "id": 2,
+        "nome": "FELIPE DOS SANTOS GUILHERMINO",
+        "email": "felipe.guilhermino@edu.senai.br",
+        "senha": "$2y$10$gt3shq6vjtAgkdMHZjGmZOQO91/wT8rgRoqbJKnbLMoGaXmVmNVie",
+        "admin": false,
+        "localizacao": true
+    }
+]
