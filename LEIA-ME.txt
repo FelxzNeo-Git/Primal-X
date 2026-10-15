@@ -1,0 +1,6 @@
+PRIMAL X - instalação rápida
+1) Suba a pasta Primal-X para um servidor com PHP 8.1+ (ex.: php -S localhost:8000 dentro da pasta).
+2) As pastas data/ e uploads/ precisam de permissão de escrita.
+3) Admin inicial: admin@empresa.com / admin123  (troque a senha após o 1º acesso).
+4) Painel: menu do usuário > "painel". Crie modalidades e produtos por lá.
+O admin inicial é admin@empresa.com / admin123 (troque a senha depois).

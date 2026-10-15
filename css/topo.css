@@ -1,0 +1,76 @@
+
+:root {
+    --nav-bg: #070707;
+    --nav-line: #1c1c1c;
+    --nav-text: #6f6f6f;
+    --nav-accent: var(--c, #e51f2a);
+    --nav-font: 'Space Mono', monospace;
+}
+.topo {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 clamp(16px, 4vw, 54px);
+    background: rgba(7, 7, 7, .92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--nav-line);
+    box-sizing: border-box;
+}
+.topo .logo {
+    color: #f3f3f3;
+    text-decoration: none;
+    font: 700 18px var(--nav-font);
+    letter-spacing: .3em;
+    white-space: nowrap;
+}
+.topo .logo span { color: greenyellow; }
+.topo-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+.topo-nav a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 18px;
+    color: #6f6f6f;
+    text-decoration: none;
+    font: 700 10px var(--nav-font);
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: color .25s, background .25s, border-color .25s;
+    white-space: nowrap;
+}
+.topo-nav a:hover { color: var(--nav-accent); }
+.topo-nav a.ativo {
+    color: var(--nav-accent);
+    background: color-mix(in srgb, var(--nav-accent) 10%, transparent);
+    border-bottom-color: var(--nav-accent);
+}
+.topo-direita {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #6f6f6f;
+    font: 400 9px var(--nav-font);
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.topo-direita a { color: var(--nav-accent); text-decoration: none; }
+.topo .carrinho b {
+    margin-left: 8px;
+    padding: 7px 9px;
+    border: 1px solid var(--nav-accent);
+    color: var(--nav-accent);
+    font-weight: 400;
+}

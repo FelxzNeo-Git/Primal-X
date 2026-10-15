@@ -1,0 +1,196 @@
+/* Lista de itens */
+.carrinho-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 900px;
+}
+
+.item-carrinho {
+    display: grid;
+    grid-template-columns: 110px 1fr auto;
+    align-items: center;
+    gap: 20px;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.item-foto {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-info .nome {
+    margin: 0 0 6px;
+}
+
+.item-info .preco-unit {
+    display: block;
+    margin: 0;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.item-subtotal .preco {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Controles de quantidade */
+.qtd-controle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.qtd-controle button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background: transparent;
+    color: inherit;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.qtd-controle button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.qtd-num {
+    min-width: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.qtd-controle .btn-remover {
+    width: auto;
+    padding: 0 12px;
+    margin-left: 8px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.qtd-controle .btn-remover:hover {
+    opacity: 1;
+}
+
+/* Total */
+.carrinho-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin-top: 24px;
+    padding: 18px 14px;
+    border-top: 2px solid currentColor;
+    font-size: 1.3rem;
+}
+
+/* Botão de pagamento */
+.form-pagar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+.btn-pagar {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+.btn-continuar {
+    color: inherit;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.btn-continuar:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Mensagem de sucesso */
+.pedido-ok {
+    max-width: 900px;
+    margin-bottom: 24px;
+    padding: 18px 20px;
+    border: 1px solid rgba(80, 200, 120, 0.5);
+    border-radius: 10px;
+    background: rgba(80, 200, 120, 0.1);
+}
+
+.pedido-ok h3 {
+    margin: 0 0 6px;
+}
+
+.pedido-ok p {
+    margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .item-carrinho {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .item-foto {
+        width: 80px;
+        height: 80px;
+    }
+
+    .item-subtotal {
+        grid-column: 2;
+    }
+
+    .qtd-controle {
+        flex-wrap: wrap;
+    }
+
+    .form-pagar {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        text-align: center;
+    }
+}
+
+
+
+.pedido-pendente,
+.pedido-erro {
+    max-width: 900px;
+    margin-bottom: 24px;
+    padding: 18px 20px;
+    border-radius: 10px;
+}
+
+.pedido-pendente {
+    border: 1px solid rgba(255, 200, 60, 0.5);
+    background: rgba(255, 200, 60, 0.1);
+}
+
+.pedido-erro {
+    border: 1px solid rgba(230, 30, 40, 0.5);
+    background: rgba(230, 30, 40, 0.1);
+}
+
+.pedido-pendente h3,
+.pedido-erro h3 { margin: 0 0 6px; }
+
+.pedido-pendente p,
+.pedido-erro p { margin: 0; }

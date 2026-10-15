@@ -1,0 +1,273 @@
+/* Formulários e painel de administração (visual do formulário do pacote "processar") */
+.admin-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 24px;
+}
+
+.admin-largo {
+    align-items: stretch;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.box {
+    width: 100%;
+    max-width: 460px;
+    padding: 32px;
+    background: #121212;
+    border: 1px solid #2a2a2a;
+}
+
+.box h1,
+.admin-titulo {
+    font: 700 28px var(--f-titulo);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.sub {
+    margin-bottom: 24px;
+    font: 400 11px var(--f-mono);
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--muda);
+}
+
+label.t {
+    display: block;
+    margin: 18px 0 8px;
+    font: 400 11px var(--f-mono);
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--muda);
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    background: var(--bg);
+    border: 1px solid #2a2a2a;
+    color: var(--texto);
+    font: 16px var(--f-corpo);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--c);
+}
+
+.tipos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.opt {
+    position: relative;
+}
+
+.opt input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.opt label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 18px 12px;
+    border: 1px solid #2a2a2a;
+    background: var(--bg);
+    cursor: pointer;
+    font: 500 15px var(--f-titulo);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.opt .ic {
+    font-size: 22px;
+    color: var(--c);
+}
+
+.opt label:hover {
+    border-color: #555;
+}
+
+.opt input:checked+label {
+    border-color: var(--c);
+    color: #fff;
+    background: color-mix(in srgb, var(--c) 15%, transparent);
+}
+
+.opt input:focus-visible+label {
+    outline: 2px solid var(--c);
+    outline-offset: 2px;
+}
+
+.upload {
+    display: block;
+    padding: 20px;
+    background: var(--bg);
+    border: 1px dashed #444;
+    text-align: center;
+    cursor: pointer;
+    color: var(--muda);
+    font-size: 14px;
+    transition: .2s;
+}
+
+.upload:hover {
+    border-color: var(--c);
+    color: var(--texto);
+}
+
+.upload input {
+    display: none;
+}
+
+#preview {
+    display: none;
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-top: 12px;
+    border: 1px solid #2a2a2a;
+}
+
+.box button[type=submit] {
+    width: 100%;
+    margin-top: 28px;
+    padding: 14px;
+    background: transparent;
+    color: var(--c);
+    border: 1px solid var(--c);
+    cursor: pointer;
+    font: 500 16px var(--f-titulo);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.box button[type=submit]:hover {
+    background: var(--c);
+    color: #fff;
+}
+
+.erros {
+    margin-bottom: 12px;
+    padding: 12px 16px;
+    background: rgba(225, 29, 29, .12);
+    border: 1px solid #e11d1d;
+    font-size: 14px;
+}
+
+.erros p {
+    margin: 4px 0;
+}
+
+.link {
+    display: block;
+    margin-top: 18px;
+    text-align: center;
+    color: var(--muda);
+    font-size: 13px;
+}
+
+.link:hover {
+    color: var(--texto);
+}
+
+/* Painel */
+.admin-acoes {
+    display: flex;
+    gap: 14px;
+    margin: 10px 0 30px;
+}
+
+.admin-acoes .btn {
+    margin: 0;
+}
+
+.admin-bloco {
+    margin-bottom: 26px;
+    padding: 20px;
+    border: 1px solid var(--bd);
+    border-top: 2px solid var(--c);
+    background: #0f0f0f;
+}
+
+.admin-bloco h2 {
+    margin-bottom: 12px;
+    font: 700 20px var(--f-titulo);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--c);
+}
+
+.admin-mod {
+    margin-top: 12px;
+}
+
+.admin-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--linha);
+    font-size: 14px;
+}
+
+.admin-prod {
+    padding-left: 18px;
+    color: var(--muda);
+    font-size: 13px;
+}
+
+.adm-acoes {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font: 400 11px var(--f-mono);
+    letter-spacing: .1em;
+}
+
+.adm-acoes a {
+    color: var(--c);
+}
+
+.del {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: #e11d1d;
+    font: 400 11px var(--f-mono);
+    letter-spacing: .1em;
+}
+
+.del:hover {
+    text-decoration: underline;
+}
+
+.vazio-min {
+    color: var(--muda);
+    font-size: 13px;
+}
+
+.vazio-min a {
+    color: var(--c);
+}

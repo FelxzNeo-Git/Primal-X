@@ -1,0 +1,6 @@
+data/*
+!data/.htaccess
+php/data/
+uploads/*
+!uploads/.htaccess
+php/includes/config_pagamento.php

@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.80),
+            rgba(0, 0, 0, 0.80)
+        ),
+        url("../img/salto_boom.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+.perfil-pagina {
+    width: 100%;
+    max-width: 430px;
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+.perfil-subtitulo::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 3px;
+    height: 18px;
+
+    background: #ff1515;
+
+    transform: translateY(-50%);
+
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+
+.perfil-titulo {
+    font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+
+    font-size: 62px;
+    line-height: 0.86;
+    letter-spacing: -1px;
+    font-style: italic;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    margin-bottom: 18px;
+
+    word-break: break-word;
+}
+
+.perfil-destaque {
+    display: block;
+
+    color: greenyellow;
+
+    text-shadow:
+        0 0 8px rgba(57, 255, 20, 0.45),
+        0 0 20px rgba(57, 255, 20, 0.25);
+}
+
+.perfil-texto {
+    color: #9a9a9a;
+
+    font-size: 15px;
+    line-height: 1.4;
+    font-style: italic;
+
+    margin-bottom: 28px;
+}
+
+
+
+.perfil-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+
+    padding: 22px 20px;
+    margin-bottom: 22px;
+
+    background: rgba(5, 5, 5, 0.65);
+    border: 1px solid #414141;
+}
+
+.perfil-avatar {
+    flex: 0 0 56px;
+
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ff1111;
+    color: #fff;
+
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 28px;
+    font-style: italic;
+
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.18);
+}
+
+.perfil-dados {
+    width: 100%;
+    min-width: 0;
+}
+
+.perfil-linha {
+    padding: 10px 0;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.perfil-linha:first-child {
+    padding-top: 0;
+}
+
+.perfil-linha:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.perfil-linha dt {
+    color: #858585;
+
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    margin-bottom: 4px;
+}
+
+.perfil-linha dd {
+    color: #fff;
+
+    font-size: 14px;
+    word-break: break-word;
+}
+
+
+
+.btn-voltar {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50px;
+
+    margin-bottom: 25px;
+
+    background: #ff1111;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: 0.25s;
+
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.18);
+}
+
+.btn-voltar::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 22px;
+    height: 100%;
+
+    background: #0b0b0b;
+
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.btn-voltar:hover {
+    background: #ff3030;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+}
+
+.perfil-divisor {
+    border: none;
+    border-top: 1px solid #333;
+
+    margin: 0 0 25px;
+}
+
+.perfil-sair {
+    color: #777;
+    font-size: 13px;
+}
+
+.perfil-sair a {
+    color: #ff1515;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    margin-left: 5px;
+
+    transition: 0.2s;
+}
+
+.perfil-sair a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 700px) {
+    .perfil-titulo {
+        font-size: 48px;
+    }
+}
